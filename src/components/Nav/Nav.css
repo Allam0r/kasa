@@ -1,0 +1,35 @@
+.nav-header {
+  width: 309px;
+  height: 34px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 57px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-home {
+  width: 136px;
+  text-align: right;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: #ff6060;
+  text-decoration: none;
+  text-decoration-line: underline;
+}
+
+.link-about {
+  width: 116px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: #ff6060;
+  text-decoration: none;
+}
+
+.link-about:hover {
+  text-decoration-line: underline;
+}

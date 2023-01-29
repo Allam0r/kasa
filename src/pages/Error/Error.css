@@ -1,0 +1,32 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorNumber {
+  font-size: 288px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #ff6060;
+  margin-bottom: 66px;
+}
+
+.errorText {
+  font-size: 36px;
+  font-family: "Montserrat";
+  color: #ff6060;
+  margin-bottom: 182px;
+}
+
+.error-link-home {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #ff6060;
+  margin-bottom: 159px;
+}
+
+.error-link-home:hover {
+  text-decoration-line: underline;
+}
