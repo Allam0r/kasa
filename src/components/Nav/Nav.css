@@ -33,3 +33,27 @@ ul {
 .link-about:hover {
   text-decoration-line: underline;
 }
+
+@media (max-width: 767px) {
+  .nav-header {
+    width: 140px;
+    height: 17px;
+  }
+
+  ul {
+    gap: 10px;
+    padding: 0;
+  }
+
+  .link-home {
+    width: 59px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .link-about {
+    width: 71px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

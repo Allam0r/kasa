@@ -30,3 +30,25 @@
 .error-link-home:hover {
   text-decoration-line: underline;
 }
+
+@media (max-width: 767px) {
+  .errorContainer {
+    margin-top: 182px;
+  }
+
+  .errorNumber {
+    font-size: 96px;
+    margin-bottom: 11px;
+  }
+
+  .errorText {
+    font-size: 18px;
+    margin-bottom: 133px;
+    text-align: center;
+  }
+
+  .error-link-home {
+    font-size: 14px;
+    margin-bottom: 235px;
+  }
+}

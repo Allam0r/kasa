@@ -19,3 +19,9 @@
   font-family: "Montserrat";
   margin-top: 29px;
 }
+
+@media (max-width: 767px) {
+  .footer-text {
+    font-size: 12px;
+  }
+}

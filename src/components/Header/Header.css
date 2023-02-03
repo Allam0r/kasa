@@ -9,3 +9,14 @@
 .logo {
   width: 210px;
 }
+
+@media (max-width: 767px) {
+  .header {
+    height: 47px;
+    margin: 20px 20px 16px 20px;
+  }
+
+  .logo {
+    width: 145px;
+  }
+}
