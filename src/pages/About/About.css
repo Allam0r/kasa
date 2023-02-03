@@ -1,0 +1,28 @@
+.About-box {
+  margin: 0 100px;
+}
+
+.DBanner {
+  width: 100%;
+  padding-bottom: 31px;
+}
+
+.MBanner {
+  display: none;
+  width: 100%;
+  padding-bottom: 19px;
+}
+
+@media (max-width: 767px) {
+  .About-box {
+    margin: 0 20px 168px 20px;
+  }
+
+  .DBanner {
+    display: none;
+  }
+
+  .MBanner {
+    display: block;
+  }
+}

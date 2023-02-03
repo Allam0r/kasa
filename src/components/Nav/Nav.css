@@ -11,6 +11,10 @@ ul {
   align-items: center;
 }
 
+li:hover {
+  text-decoration-line: underline;
+}
+
 .link-home {
   width: 136px;
   text-align: right;
@@ -18,7 +22,6 @@ ul {
   font-family: "Montserrat";
   color: #ff6060;
   text-decoration: none;
-  text-decoration-line: underline;
 }
 
 .link-about {
@@ -28,10 +31,6 @@ ul {
   font-family: "Montserrat";
   color: #ff6060;
   text-decoration: none;
-}
-
-.link-about:hover {
-  text-decoration-line: underline;
 }
 
 @media (max-width: 767px) {
