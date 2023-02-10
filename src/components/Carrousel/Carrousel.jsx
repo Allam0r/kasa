@@ -6,6 +6,8 @@ import { useState } from "react";
 import LeftArrow from "./images/Vector left.svg";
 import RightArrow from "./images/Vector right.svg";
 
+import "./Carrousel.css";
+
 // Déclaration et export par défaut du composant Slider
 export default function Slider({ imageSlider }) {
   // Déclaration de l'état currentIndex avec le hook useState et initialisation à 0

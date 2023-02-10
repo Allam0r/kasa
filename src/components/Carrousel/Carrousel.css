@@ -1,0 +1,57 @@
+.carrousel {
+  position: relative;
+  display: flex;
+  margin: 0 100px;
+  height: 415px;
+  border-radius: 25px;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  width: 47px;
+  height: 79px;
+  cursor: pointer;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+  width: 47px;
+  height: 79px;
+  cursor: pointer;
+}
+
+.slideCount {
+  position: absolute;
+  left: 50%;
+  top: 86%;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+
+@media (max-width: 1023px) {
+  .carrousel {
+    height: 335px;
+    margin: 0 20px;
+  }
+
+  .left-arrow {
+    width: 12px;
+    height: 20px;
+  }
+
+  .right-arrow {
+    width: 12px;
+    height: 20px;
+  }
+
+  .slideCount {
+    display: none;
+  }
+}
