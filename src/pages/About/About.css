@@ -13,7 +13,7 @@
   padding-bottom: 19px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .About-box {
     margin: 0 20px 168px 20px;
   }

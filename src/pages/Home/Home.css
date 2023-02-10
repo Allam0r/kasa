@@ -16,9 +16,13 @@
 .box-gallery {
   background-color: #f6f6f6;
   border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 56px 50px;
+  gap: 60px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .body-box {
     margin: 0 20px;
   }

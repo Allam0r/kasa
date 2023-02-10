@@ -1,0 +1,12 @@
+.card_logement {
+  width: 340px;
+  height: 340px;
+}
+
+.card-img {
+  display: flex;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+}

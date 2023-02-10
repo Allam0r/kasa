@@ -33,7 +33,7 @@ li:hover {
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .nav-header {
     width: 140px;
     height: 17px;
