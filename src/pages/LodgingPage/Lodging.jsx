@@ -6,6 +6,8 @@ import Collapse from "../../components/Collapse/Collapse";
 import greyStar from "../../assets/images/greystar.svg";
 import redStar from "../../assets/images/redstar.svg";
 
+import "./Lodging.css";
+
 // Composant Lodging qui gère l'affichage des informations sur un logement en particulier
 const Lodging = () => {
   // Déclaration de l'état qui contiendra les images du slider

@@ -4,6 +4,8 @@
   margin: 0 100px;
   height: 415px;
   border-radius: 25px;
+  background-position: center;
+  background-size: cover;
 }
 
 .left-arrow {
