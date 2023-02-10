@@ -43,7 +43,8 @@
 
   .errorText {
     font-size: 18px;
-    margin-bottom: 133px;
+    margin: 0 58px 133px 57px;
+    line-height: 25.67px;
     text-align: center;
   }
 
