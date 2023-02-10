@@ -30,7 +30,7 @@
   color: #ff6060;
   background-color: #f6f6f6;
   border-radius: 5px;
-  padding: 36px 0 19px 18px;
+  padding: 36px 12px 19px 18px;
 }
 
 @media (max-width: 1023px) {

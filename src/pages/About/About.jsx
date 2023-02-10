@@ -6,7 +6,6 @@ import Collapse from "../../components/Collapse/Collapse";
 import "./About.css";
 
 const About = () => {
-  let list = ["test1", "test2", "equipement3"];
   return (
     <div className="About-box">
       <img className="DBanner" src={AboutImg} alt="Kasa a propos" />
@@ -31,7 +30,6 @@ const About = () => {
         tag="text"
         content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
       />
-      <Collapse title="Sécurité" tag="list" content={list} />
     </div>
   );
 };
