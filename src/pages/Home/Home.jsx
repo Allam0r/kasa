@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 // On importe les images nécessaires à la mise forme de la page.
-import Banner from "../../assets/images/Banner.svg";
-import BannerM from "../../assets/images/BannerM.svg";
+import Banner from "../../assets/images/Banner.png";
+import BannerM from "../../assets/images/BannerM.png";
 
 // On importe le composant Cards.
 import Cards from "../../components/Cards/Cards";
