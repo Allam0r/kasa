@@ -4,7 +4,7 @@ import down from "./images/VectorDOWN.svg";
 
 import "./Collapse.css";
 
-const Collapse = ({ title, content, tag }) => {
+const Collapse = ({ title, content, tag, type = "big" }) => {
   // Définition de l'état isCollapsed pour savoir si le contenu est développé ou réduit
   const [isCollapsed, setIsCollapsed] = useState(true);
 
@@ -15,7 +15,11 @@ const Collapse = ({ title, content, tag }) => {
 
   return (
     <div className="collapse-box">
-      <h2 className="title-collapse">
+      <h2
+        className={`title-collapse ${
+          type === "small" ? "title-collapse-small" : ""
+        }`}
+      >
         {title}
         <img
           className="collapse-img"

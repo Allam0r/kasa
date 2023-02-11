@@ -16,6 +16,10 @@
   font-weight: 500;
 }
 
+.title-collapse-small {
+  color: blue;
+  font-size: 18px;
+}
 .collapse-img {
   width: 24px;
   height: 14px;
