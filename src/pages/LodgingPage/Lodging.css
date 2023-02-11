@@ -1,5 +1,5 @@
 .lodging {
-  margin: 0 100px;
+  margin: 30px 100px 0 100px;
 }
 
 .lodging-content {
@@ -36,6 +36,7 @@ button {
   border: none;
   color: white;
   background-color: #ff6060;
+  font-family: "Montserrat";
 }
 
 .host-info {
@@ -49,6 +50,9 @@ button {
   display: flex;
   align-self: center;
   flex-direction: column;
+  color: #ff6060;
+  font-family: "Montserrat";
+  font-size: 18px;
 }
 
 .host-pic {
@@ -59,7 +63,7 @@ button {
   border-radius: 50%;
 }
 
-.lodging-content-rating {
+/* .lodging-content-rating {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -68,4 +72,4 @@ button {
 .lodging-content-collapse {
   display: flex;
   justify-content: space-between;
-}
+}   */
