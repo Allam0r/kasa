@@ -1,0 +1,71 @@
+.lodging {
+  margin: 0 100px;
+}
+
+.lodging-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lodging-content-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleLodging {
+  font-family: "Montserrat";
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.locationLodging {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #ff6060;
+}
+
+button {
+  display: inline;
+  padding: 5px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #ff6060;
+}
+
+.host-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0 10px;
+}
+
+.lodging-content-host {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.host-pic {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.lodging-content-rating {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.lodging-content-collapse {
+  display: flex;
+  justify-content: space-between;
+}

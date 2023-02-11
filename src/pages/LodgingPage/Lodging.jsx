@@ -45,23 +45,29 @@ const Lodging = () => {
       <Slider imageSlider={imageSlider} />
       <div className="lodging">
         <div className="lodging-content">
-          <div className="lodging-content_infos">
-            <h1> {dataCurrentLodging[0].title} </h1>
-            <p> {dataCurrentLodging[0].location} </p>
+          <div className="lodging-content-infos">
+            <p className="titleLodging"> {dataCurrentLodging[0].title} </p>
+            <p className="locationLodging">
+              {" "}
+              {dataCurrentLodging[0].location}{" "}
+            </p>
             <div>
               {dataCurrentLodging[0].tags.map((tag, index) => {
                 return <button key={index}>{tag}</button>;
               })}
             </div>
           </div>
-          <div className="lodging-content-host">
-            <span>{name[0]}</span>
-            <span>{name[1]}</span>
+          <div className="host-info">
+            <div className="lodging-content-host">
+              <span>{name[0]}</span>
+              <span>{name[1]}</span>
+            </div>
+            <img
+              className="host-pic"
+              src={dataCurrentLodging[0].host.picture}
+              alt="Propriétaire du logement"
+            />
           </div>
-          <img
-            src={dataCurrentLodging[0].host.picture}
-            alt="Propriétaire du logement"
-          />
         </div>
         <div className="lodging-content-rating">
           {[...Array(5)].map((star, index) => {
@@ -76,8 +82,18 @@ const Lodging = () => {
           })}
         </div>
         <div className="lodging-content-collapse">
-          <Collapse title="Description" tag="text" content={description} />
-          <Collapse title="Équipements" tag="list" content={equipments} />
+          <Collapse
+            className="lodging-collapse-desc"
+            title="Description"
+            tag="text"
+            content={description}
+          />
+          <Collapse
+            className="lodging-collapse-stuff"
+            title="Équipements"
+            tag="list"
+            content={equipments}
+          />
         </div>
       </div>
     </>
