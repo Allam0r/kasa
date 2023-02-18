@@ -33,6 +33,10 @@
   padding: 36px 12px 19px 18px;
 }
 
+.collapse-desc-small {
+  font-size: 18px;
+}
+
 @media (max-width: 1023px) {
   .collapse-box {
     margin: 0 0 20px 0;

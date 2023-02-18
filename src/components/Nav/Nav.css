@@ -4,15 +4,16 @@
 }
 
 ul {
-  list-style-type: none;
   display: flex;
   gap: 57px;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
 }
 
 li:hover {
   text-decoration-line: underline;
+  color: #ff6060;
 }
 
 .link-home {

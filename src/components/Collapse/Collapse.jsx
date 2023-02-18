@@ -30,11 +30,21 @@ const Collapse = ({ title, content, tag, type = "big" }) => {
       </h2>
       {/* Contenu développé ou réduit en fonction de l'état isCollapsed */}
       {!isCollapsed && tag === "text" && (
-        <p className="collapse-desc">{content}</p>
+        <p
+          className={`collapse-desc ${
+            type === "small" ? "collapse-desc-small" : ""
+          }`}
+        >
+          {content}
+        </p>
       )}
 
       {!isCollapsed && tag === "list" && (
-        <div className="collapse-desc">
+        <div
+          className={`collapse-desc ${
+            type === "small" ? "collapse-desc-small" : ""
+          }`}
+        >
           {content.map((item, i) => {
             return <p key={i}>{item}</p>;
           })}
