@@ -1,30 +1,23 @@
-.lodging {
+.lodging-info {
   margin: 30px 100px 0 100px;
-}
-
-.lodging-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
-.lodging-content-infos {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.titleLodging {
+.title-lodging {
   font-family: "Montserrat";
   font-size: 36px;
   color: #ff6060;
 }
 
-.locationLodging {
+.location-lodging {
   font-family: "Montserrat";
   font-size: 18px;
   color: #ff6060;
+}
+
+.lodging-filter {
+  margin-top: 20px;
 }
 
 button {
@@ -39,23 +32,21 @@ button {
   font-family: "Montserrat";
 }
 
-.host-info {
+.lodging-host {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 0 10px;
+  flex-direction: column;
 }
 
-.lodging-content-host {
+.host-info {
   display: flex;
-  align-self: center;
-  flex-direction: column;
+  flex-direction: row;
   color: #ff6060;
   font-family: "Montserrat";
   font-size: 18px;
+  gap: 10px;
 }
 
-.host-pic {
+.img-host {
   width: 64px;
   height: 64px;
   object-fit: cover;
@@ -63,13 +54,88 @@ button {
   border-radius: 50%;
 }
 
-/* .lodging-content-rating {
+.host-rating {
+  margin-top: 20px;
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-.lodging-content-collapse {
+.lodging-collapse {
+  margin: 25px 100px 15px 100px;
   display: flex;
   justify-content: space-between;
-}   */
+  gap: 75px;
+}
+
+.lodging-collapse-desc {
+  width: 100%;
+}
+
+.lodging-collapse-stuff {
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .lodging-info {
+    margin: 15px 20px 0 20px;
+    flex-direction: column;
+  }
+
+  .title-lodging {
+    font-size: 18px;
+  }
+
+  .location-lodging {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .lodging-filter {
+    margin-top: 10px;
+  }
+
+  button {
+    padding: auto;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .lodging-host {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .host-info {
+    font-size: 12px;
+  }
+
+  .img-host {
+    width: 32px;
+    height: 32px;
+  }
+
+  .host-rating {
+    margin-top: 15px;
+  }
+
+  .stars {
+    height: 15px;
+  }
+
+  .lodging-collapse {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px 65px 20px;
+    gap: 20px;
+  }
+
+  .lodging-collapse-desc {
+    width: 100%;
+  }
+
+  .lodging-collapse-stuff {
+    width: 100%;
+  }
+}

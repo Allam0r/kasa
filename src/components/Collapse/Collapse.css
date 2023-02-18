@@ -1,7 +1,3 @@
-.collapse-box {
-  margin: 0 108px 31px 108px;
-}
-
 .title-collapse {
   background-color: #ff6060;
   border-radius: 5px;
@@ -17,7 +13,7 @@
 }
 
 .title-collapse-small {
-  color: blue;
+  color: white;
   font-size: 18px;
 }
 .collapse-img {

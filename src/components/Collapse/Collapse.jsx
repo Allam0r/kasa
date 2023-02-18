@@ -14,7 +14,7 @@ const Collapse = ({ title, content, tag, type = "big" }) => {
   };
 
   return (
-    <div className="collapse-box">
+    <>
       <h2
         className={`title-collapse ${
           type === "small" ? "title-collapse-small" : ""
@@ -40,7 +40,7 @@ const Collapse = ({ title, content, tag, type = "big" }) => {
           })}
         </div>
       )}
-    </div>
+    </>
   );
 };
 

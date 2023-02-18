@@ -39,51 +39,57 @@ const Lodging = () => {
       <>
         {/* Affichage du Slider */}
         <Slider imageSlider={lodging.pictures} />
-        <div className="lodging">
-          <div className="lodging-content">
-            <div className="lodging-content-infos">
-              <p className="titleLodging"> {lodging.title} </p>
-              <p className="locationLodging"> {lodging.location} </p>
-              <div>
-                {lodging.tags.map((tag, index) => {
-                  return <button key={index}>{tag}</button>;
-                })}
-              </div>
+        <div className="lodging-info">
+          <div className="lodging-title">
+            <p className="title-lodging">{lodging.title}</p>
+            <p className="location-lodging">{lodging.location}</p>
+            <div className="lodging-filter">
+              {lodging.tags.map((tag, index) => {
+                return <button key={index}>{tag}</button>;
+              })}
             </div>
+          </div>
+
+          <div className="lodging-host">
             <div className="host-info">
-              <div className="lodging-content-host">
-                <span>{name[0]}</span>
-                <span>{name[1]}</span>
+              <div className="host-name">
+                <p className="name-1">{name[0]}</p>
+                <p className="name-2">{name[1]}</p>
               </div>
-              <img
-                className="host-pic"
-                src={lodging.host.picture}
-                alt="Propriétaire du logement"
-              />
+              <div className="host-picture">
+                <img
+                  className="img-host"
+                  src={lodging.host.picture}
+                  alt="Propriétaire du logement"
+                />
+              </div>
+            </div>
+            <div className="host-rating">
+              {[...Array(5)].map((star, index) => {
+                const ratingValue = index + 1;
+                return (
+                  <img
+                    className="stars"
+                    key={index}
+                    src={ratingValue <= rating ? redStar : greyStar}
+                    alt="Star"
+                  />
+                );
+              })}
             </div>
           </div>
-          <div className="lodging-content-rating">
-            {[...Array(5)].map((star, index) => {
-              const ratingValue = index + 1;
-              return (
-                <img
-                  key={index}
-                  src={ratingValue <= rating ? redStar : greyStar}
-                  alt="Star"
-                />
-              );
-            })}
-          </div>
-          <div className="lodging-content-collapse">
+        </div>
+        <div className="lodging-collapse">
+          <div className="lodging-collapse-desc">
             <Collapse
-              className="lodging-collapse-desc"
               title="Description"
               tag="text"
               content={description}
               type="small"
             />
+          </div>
+          <div className="lodging-collapse-stuff">
             <Collapse
-              className="lodging-collapse-stuff"
               title="Équipements"
               tag="list"
               content={equipments}

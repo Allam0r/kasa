@@ -13,11 +13,27 @@
   padding-bottom: 19px;
 }
 
+.collapse-box {
+  margin: 0 205px 200px 205px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 @media (max-width: 1023px) {
   .About-box {
-    margin: 0 20px 168px 20px;
+    margin: 0 20px;
   }
 
+  .collapse-box {
+    margin: 0 20px 170px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .DBanner {
     display: none;
   }
